@@ -6,8 +6,7 @@
 
 class DreeNode {
    private:
-    std::string get_file_name_from_path(std::string &path);
-
+    std::string getFileNameFromPath(const std::string &path); 
    public:
     std::string name;
     std::string path;
@@ -16,7 +15,7 @@ class DreeNode {
     DreeNode *left;
     DreeNode *right;
 
-    DreeNode(std::string &str);
+    DreeNode(const std::string &str); 
 };
 
-#endif
+#endif 
